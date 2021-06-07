@@ -1,0 +1,58 @@
+/*
+  Breakpoints:
+    xs:  375px,
+    sm:  576px,
+    md:  768px,
+    lg:  1024px,
+    xl:  1200px
+*/
+
+/* Header component responsive styles */
+
+@include media-breakpoint-down(xl) {
+  .pn-intro__wrp {
+    &::before {
+      width: 720px;
+      height: 558px;
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .pn-intro__wrp {
+    &::before {
+      width: 630px;
+      height: 496px;
+    }
+  }
+
+  .pn-intro__main {
+    max-width: 360px;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .pn-intro__wrp {
+    &::before {
+      width: 480px;
+      height: 382px;
+    }
+  }
+
+  .pn-intro__main {
+    max-width: 100%;
+  }
+
+  .pn-intro__description {
+    max-width: none;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .pn-intro__wrp {
+    &::before {
+      width: 300px;
+      height: 254px;
+    }
+  }
+}

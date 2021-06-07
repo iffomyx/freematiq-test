@@ -1,0 +1,17 @@
+/* Main wrapper component styles */
+
+.pn-main-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: $container-min-width;
+  height: 100vh;
+}
+
+.pn-main-wrapper__main {
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+  padding-top: 90px;
+  overflow: hidden;
+}

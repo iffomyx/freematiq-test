@@ -1,0 +1,68 @@
+/* region Button component variables */
+
+$btn-font-color: $white-color;
+$btn-bg-color: $primary-color;
+$btn-hover-bg-color: #2e78d3;
+
+$btn-ripple-color: rgba($white-color, 0.15);
+
+/* endregion Button component variables */
+
+/* Button component styles */
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.pn-btn {
+  position: relative;
+  display: inline-flex;
+  padding: 13px 36px;
+  overflow: hidden;
+  color: $btn-font-color;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  background-color: $btn-bg-color;
+  border-radius: 30px;
+  transition: background-color 0.3s ease-in-out;
+
+  &:hover {
+    text-decoration: none;
+    background-color: $btn-hover-bg-color;
+  }
+}
+
+.pn-btn__label {
+  z-index: 1;
+  width: 100%;
+}
+
+.pn-btn__ripple-root {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  overflow: hidden;
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+.pn-btn__ripple {
+  position: absolute;
+  background-color: $btn-ripple-color;
+  border-radius: 50%;
+  transform: scale(0);
+  animation: ripple-effect 0.3s linear;
+}
+
+@keyframes ripple-effect {
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}

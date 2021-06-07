@@ -1,0 +1,37 @@
+/* Global Site Variables */
+
+/* region colors variables */
+
+$primary-color: #489aff;
+$white-color: #fff;
+$black-color: #000;
+
+$text-color: #818d9c;
+$dark-text-color: #405063;
+$border-color: #e3e8ef;
+
+$link-color: $primary-color;
+
+/* endregion colors variables */
+
+/* region grid variables */
+
+$container-min-width: 320px;
+
+$grid-breakpoints: (
+  xs:  375px,
+  sm:  576px,
+  md:  768px,
+  lg:  1024px,
+  xl:  1200px
+);
+
+$container-max-widths: (
+  xs:  375px,
+  sm:  576px,
+  md:  768px,
+  lg:  960px,
+  xl:  1050px
+);
+
+/* endregion grid variables */

@@ -1,0 +1,27 @@
+/* region Footer component variables */
+
+$footer-border-color: #c3d0df;
+
+/* endregion Footer component variables */
+
+/* Footer component styles */
+
+.pn-footer {
+  padding: 20px 0;
+  font-weight: 400;
+  border-top: 1px solid $footer-border-color;
+}
+
+.pn-footer__text-rules {
+  white-space: nowrap;
+}
+
+@include media-breakpoint-down(sm) {
+  .pn-footer {
+    text-align: center;
+  }
+
+  .pn-footer__text-copyright {
+    margin-bottom: 10px;
+  }
+}

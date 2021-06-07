@@ -1,0 +1,834 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link href="/favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+  <link href="/favicon/favicon-32x32.png" rel="icon" type="image/png" sizes="32x32">
+  <link href="/favicon/favicon-16x16.png" rel="icon" type="image/png" sizes="16x16">
+  <link href="/favicon/site.webmanifest" rel="manifest">
+  <link href="/favicon/safari-pinned-tab.svg" rel="mask-icon" color="#5bbad5">
+
+  <meta name="msapplication-TileColor" content="#2b5797">
+  <meta name="theme-color" content="#ffffff">
+
+  <link href="//fonts.gstatic.com" rel="preconnect">
+  <link href="//fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link href="./css/main.css" rel="stylesheet">
+
+  <title>Project N1 - Special for you</title>
+</head>
+<body>
+  <div class="pn-main-wrapper">
+    <header class="pn-header js-header">
+      <div class="pn-container">
+        <div class="pn-header__wrp d-flex align-items-center">
+          <div class="pn-header__logo d-flex">
+            <svg class="pn-header__icon-logo flex-shrink-0">
+              <use class="pn-header__icon-full" xlink:href="/images/logo/logo-full.svg#logo"></use>
+              <use class="pn-header__icon-without-label" xlink:href="/images/logo/logo-without-label.svg#logo"></use>
+            </svg>
+          </div>
+          <nav class="pn-header__nav align-items-center justify-content-center flex-grow-1">
+            <ul class="pn-header__menu-list d-flex">
+              <li class="pn-header__menu-item">
+                <a class="pn-header__menu-link js-menu-link" href="/error-404.html">Это меню</a>
+              </li>
+              <li class="pn-header__menu-item">
+                <a class="pn-header__menu-link js-menu-link" href="/error-404.html">Должно</a>
+              </li>
+              <li class="pn-header__menu-item">
+                <a class="pn-header__menu-link js-menu-link" href="/error-404.html">Быть</a>
+              </li>
+              <li class="pn-header__menu-item">
+                <a class="pn-header__menu-link js-menu-link" href="/error-404.html">Закрепленным</a>
+              </li>
+              <li class="pn-header__menu-item">
+                <a class="pn-header__menu-link js-menu-link" href="/error-404.html">При скролле</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="pn-header__actions d-flex align-items-center justify-content-end">
+            <button class="pn-header__btn-modal pn-btn js-modal-btn" data-ripple-effect data-modal-id="modal">
+              <span class="pn-btn__label">Модалка</span>
+              <span class="pn-btn__ripple-root"></span>
+            </button>
+            <button class="pn-header__btn-menu pn-btn d-none d-lg-flex js-menu-btn">
+              <span class="pn-header__btn-lines d-flex align-items-center justify-content-center">
+                <span class="pn-header__btn-menu-line pn-header__btn-menu-line--top"></span>
+                <span class="pn-header__btn-menu-line pn-header__btn-menu-line--middle"></span>
+                <span class="pn-header__btn-menu-line pn-header__btn-menu-line--bottom"></span>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="pn-main-wrapper__main">
+
+      <section class="pn-section pn-intro">
+        <div class="pn-intro__wrp">
+          <div class="pn-container">
+            <div class="pn-intro__main d-flex flex-column justify-content-center flex-shrink-0">
+              <div class="pn-section__title-wrp">
+                <div class="pn-section__title-emoji pn-emoji pn-emoji--hand-wave"></div>
+                <h2 class="pn-section__title">Привет!</h2>
+                <p class="pn-intro__description pn-section__description">
+                  Группа компаний Freematiq и MITRA ищет себе клевого верстальщика. На
+                  постоянную работу в офисе или периодическую работу по удаленке. Хотим предложить тебе вместо скучных
+                  тестовых заданий – сверстать эту страницу.
+                </p>
+              </div>
+              <div class="pn-intro__info">
+                <p class="pn-intro__list-title">В своей работе мы используем:</p>
+                <ul class="pn-intro__list pn-list">
+                  <li class="pn-list__item">HTML5, CSS3</li>
+                  <li class="pn-list__item">Bootstrap 4</li>
+                  <li class="pn-list__item">Jade, Pug</li>
+                  <li class="pn-list__item">Less, SCSS</li>
+                  <li class="pn-list__item">Иконочные шрифты</li>
+                  <li class="pn-list__item">SVG иллюстрации</li>
+                </ul>
+                <p>Не ограничиваем этими технологиями, верстай как удобно.</p>
+              </div>
+            </div>
+            <div class="pn-intro__picture d-flex d-md-none align-items-center justify-content-end">
+              <img src="/images/index-page/intro/intro-picture.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pn-section pn-first-task">
+        <div class="pn-container justify-content-center">
+          <div class="pn-first-task__content d-flex flex-column align-items-center text-center">
+            <p class="pn-first-task__description">Это твое первое задание в нашей компании. Если оно покажется тебе интересным и его реализация нам понравится – добро пожаловать в команду.</p>
+            <div class="d-flex justify-content-center">
+              <div class="pn-first-task__item pn-first-task__item--height d-flex flex-column align-items-center">
+                <div class="pn-first-task__icon-wrp d-flex align-items-center justify-content-center">
+                  <svg class="pn-first-task__icon" >
+                    <use xlink:href="/images/index-page/first-task/monitor-height.svg#monitor"></use>
+                  </svg>
+                </div>
+                <span class="pn-first-task__item-text">Первый блок на всю высоту экрана</span>
+              </div>
+              <div class="pn-first-task__item pn-first-task__item--devices d-flex flex-column align-items-center">
+                <div class="pn-first-task__icon-wrp d-flex align-items-center justify-content-center">
+                  <svg class="pn-first-task__icon">
+                    <use xlink:href="/images/index-page/first-task/devices.svg#devices"></use>
+                  </svg>
+                </div>
+                <span class="pn-first-task__item-text">Отзывчивая верстка</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pn-section pn-figma">
+        <div class="pn-container">
+          <picture class="pn-figma__picture d-block d-md-none">
+            <source
+              type="image/webp"
+              srcset="/images/index-page/figma/figma-windows.webp 1x, /images/index-page/figma/figma-windows_2x.webp 2x">
+            <img
+              srcset="/images/index-page/figma/figma-windows.png 1x, /images/index-page/figma/figma-windows_2x.png 2x"
+              src="/images/index-page/figma/figma-windows.png" alt="">
+          </picture>
+          <div class="pn-figma__info d-md-flex flex-column align-items-md-center">
+            <div class="pn-figma__title-wrp pn-section__title-wrp align-items-md-center">
+              <div class="pn-section__title-emoji pn-emoji pn-emoji--rocket"></div>
+              <h2 class="pn-figma__title pn-section__title">Как ускорить процесс</h2>
+              <picture class="pn-figma__picture d-none d-md-block">
+                <img
+                  srcset="/images/index-page/figma/figma-windows.png 1x, /images/index-page/figma/figma-windows_2x.png 2x"
+                  src="/images/index-page/figma/figma-windows.png" alt="">
+              </picture>
+              <p class="pn-figma__description pn-section__description">Чтобы иметь доступ ко всем функциям и возможностям Figma, которые облегчат и ускорят процесс верстки, зарегистрируйся и залогинься в системе.</p>
+            </div>
+            <a class="pn-figma__btn-signup pn-btn" href="/error-404.html">Зарегистрироваться</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="pn-section pn-knowledge-rating">
+        <div class="pn-container">
+          <div class="pn-knowledge-rating__content">
+            <div class="d-flex align-items-center justify-content-between flex-md-column">
+              <div class="pn-section__title-wrp">
+                <div class="pn-section__title-emoji pn-emoji pn-emoji--star-struck"></div>
+                <h2 class="pn-knowledge-rating__title pn-section__title">Оцени себя</h2>
+                <p class="pn-knowledge-rating__description pn-section__description">
+                  Попробуй максимально объективно и честно
+                  оценить свои знания верстки по следующей шкале. И да, её тоже нужно сверстать.
+                </p>
+              </div>
+              <div class="pn-knowledge-rating__stats d-flex justify-content-center">
+                <div class="pn-knowledge-rating__stat-circle pn-knowledge-rating__stat-circle--exp flex-center flex-column">
+                  <svg class="pn-knowledge-rating__circle pn-svg" viewBox="0 0 120 120">
+                    <circle class="pn-knowledge-rating__inner-circle pn-knowledge-rating__inner-circle--outline" cx="60" cy="60" r="58"></circle>
+                    <circle class="pn-knowledge-rating__inner-circle pn-knowledge-rating__inner-circle--color" cx="60" cy="60" r="58" stroke-dasharray="364.424 364.424" stroke-dashoffset="280" transform="rotate(-90) translate(-120)"></circle>
+                  </svg>
+                  <span class="pn-knowledge-rating__num">1.5</span>
+                  <span class="pn-knowledge-rating__text">Года</span>
+                </div>
+                <div class="pn-knowledge-rating__stat-circle pn-knowledge-rating__stat-circle--projects flex-center flex-column">
+                  <svg class="pn-knowledge-rating__circle pn-svg" viewBox="0 0 120 120">
+                    <circle class="pn-knowledge-rating__inner-circle pn-knowledge-rating__inner-circle--outline" cx="60" cy="60" r="58"></circle>
+                    <circle class="pn-knowledge-rating__inner-circle pn-knowledge-rating__inner-circle--color" cx="60" cy="60" r="58" stroke-dasharray="364.424 364.424" stroke-dashoffset="290" transform="rotate(-90) translate(-120)"></circle>
+                  </svg>
+                  <span class="pn-knowledge-rating__num">8</span>
+                  <span class="pn-knowledge-rating__text">Проектов</span>
+                </div>
+              </div>
+            </div>
+            <div class="pn-knowledge-rating__range-wrp">
+              <div class="pn-knowledge-rating__range">
+                <div class="pn-knowledge-rating__range-inverse"></div>
+                <div class="pn-knowledge-rating__range-slider"></div>
+              </div>
+              <div class="pn-knowledge-rating__range-points d-flex justify-content-between">
+                <span class="pn-knowledge-rating__range-point">Intern</span>
+                <span class="pn-knowledge-rating__range-point">Junior</span>
+                <span class="pn-knowledge-rating__range-point">Middle</span>
+                <span class="pn-knowledge-rating__range-point">Senior</span>
+                <span class="pn-knowledge-rating__range-point">Lead</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pn-section pn-shoes-slider">
+        <div class="pn-container">
+          <div class="pn-section__title-wrp pn-section__title-wrp--center">
+            <div class="pn-section__title-emoji pn-emoji pn-emoji--raised-hands"></div>
+            <h2 class="pn-section__title">Сверстаешь такой слайдер?</h2>
+            <p class="pn-section__description">
+              Это не так сложно, на самом деле. Сложнее придумать как он будет
+              адаптироваться. Различные модные эффекты так же будут оценены по достоинству.
+            </p>
+          </div>
+        </div>
+        <div class="pn-shoes-slider__wrp">
+            <div class="pn-shoes-slider__container d-flex">
+              <div class="pn-container flex-md-column-reverse">
+                <div class="pn-shoes-slider__left-column d-flex flex-column align-items-center justify-content-between flex-shrink-0">
+                  <div class="pn-shoes-slider__actions d-flex flex-column flex-md-row-reverse align-items-center justify-content-md-between">
+                    <button class="pn-shoes-slider__btn-nav pn-shoes-slider__btn-nav--next flex-center js-slider-btn-next">
+                      <svg class="pn-shoes-slider__btn-arrow">
+                        <use xlink:href="/images/sprite/icons-sprite.svg#icon-arrow-right"></use>
+                      </svg>
+                    </button>
+                    <button class="pn-shoes-slider__btn-nav pn-shoes-slider__btn-nav--prev flex-center js-slider-btn-prev">
+                      <svg class="pn-shoes-slider__btn-arrow">
+                        <use xlink:href="/images/sprite/icons-sprite.svg#icon-arrow-left"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <span class="pn-shoes-slider__counter js-slider-pagination"></span>
+                </div>
+                <div class="pn-shoes-slider__main">
+                  <div class="swiper-container js-slider">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="pn-shoe-card js-shoe-card">
+                          <button class="pn-shoe-card__btn-favorite js-btn-favorite d-flex">
+                            <svg class="pn-shoe-card__icon pn-shoe-card__icon-favorite pn-svg">
+                              <use xlink:href="/images/sprite/icons-sprite.svg#icon-hearth"></use>
+                            </svg>
+                          </button>
+                          <div class="pn-shoe-card__info d-flex flex-column align-items-start">
+                            <div class="pn-shoe-card__img-wrp d-flex align-items-center justify-content-center">
+                              <picture class="pn-shoe-card__img d-block">
+                                <source
+                                  type="image/webp"
+                                  srcset="/images/index-page/shoes-slider/shoes-item-1.webp 1x, /images/index-page/shoes-slider/shoes-item-1_2x.webp 2x">
+                                <img
+                                  srcset="/images/index-page/shoes-slider/shoes-item-1.png 1x, /images/index-page/shoes-slider/shoes-item-1.png 2x"
+                                  src="/images/index-page/shoes-slider/shoes-item-1.png" alt="">
+                              </picture>
+                            </div>
+                            <span class="pn-shoe-card__title">New Balance 840 90s</span>
+                            <p class="pn-shoe-card__desc flex-grow-1">
+                              840 90s Running объединили в себе спортивную эстетику и необходимый в городском ритме комфорт.
+                            </p>
+                            <div>
+                              <span class="pn-shoe-card__price">10 990 ₽</span>
+                              <span class="pn-shoe-card__old-price">12 990 ₽</span>
+                            </div>
+                          </div>
+                          <div class="pn-shoe-card__actions d-flex align-items-center justify-content-between">
+                            <div class="pn-shoe-card__colors-wrp d-flex align-items-center js-item-colors">
+                              <span>Цвет:</span>
+                              <button class="pn-shoes-card__btn-color pn-shoes-card__btn-color--selected js-color-btn flex-center">
+                                <span class="pn-shoe-card__color" style="background-color: #d45d5e;"></span>
+                              </button>
+                              <button class="pn-shoes-card__btn-color js-color-btn flex-center">
+                                <span class="pn-shoe-card__color" style="background-color: #518dd5;"></span>
+                              </button>
+                              <button class="pn-shoes-card__btn-color js-color-btn flex-center">
+                                <span class="pn-shoe-card__color" style="background-color: #e98d4b;"></span>
+                              </button>
+                            </div>
+                            <button class="pn-shoe-card__btn-item-cart flex-shrink-0">+</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="pn-shoe-card js-shoe-card">
+                          <button class="pn-shoe-card__btn-favorite js-btn-favorite d-flex">
+                            <svg class="pn-shoe-card__icon pn-shoe-card__icon-favorite pn-svg">
+                              <use xlink:href="/images/sprite/icons-sprite.svg#icon-hearth"></use>
+                            </svg>
+                          </button>
+                          <div class="pn-shoe-card__info d-flex flex-column align-items-start">
+                            <div class="pn-shoe-card__img-wrp d-flex align-items-center justify-content-center">
+                              <picture class="pn-shoe-card__img d-block">
+                                <source
+                                  srcset="/images/index-page/shoes-slider/shoes-item-2_2x.webp 2x, /images/index-page/shoes-slider/shoes-item-2.webp 1x"
+                                  type="image/webp">
+                                <img
+                                  srcset="/images/index-page/shoes-slider/shoes-item-2_2x.png 2x, /images/index-page/shoes-slider/shoes-item-2.png 1x"
+                                  src="/images/index-page/shoes-slider/shoes-item-2.png" alt="">
+                              </picture>
+                            </div>
+                            <span class="pn-shoe-card__title">New Balance 840 90s</span>
+                            <p class="pn-shoe-card__desc flex-grow-1">
+                              840 90s Running объединили в себе спортивную эстетику и необходимый в городском ритме комфорт.
+                            </p>
+                            <div>
+                              <span class="pn-shoe-card__price">10 990 ₽</span>
+                              <span class="pn-shoe-card__old-price">12 990 ₽</span>
+                            </div>
+                          </div>
+                          <div class="pn-shoe-card__actions d-flex align-items-center justify-content-between">
+                            <div class="pn-shoe-card__colors-wrp d-flex align-items-center js-item-colors">
+                              <span>Цвет:</span>
+                              <button class="pn-shoes-card__btn-color pn-shoes-card__btn-color--selected js-color-btn flex-center">
+                                <span class="pn-shoe-card__color" style="background-color: #d45d5e;"></span>
+                              </button>
+                              <button class="pn-shoes-card__btn-color js-color-btn flex-center">
+                                <span class="pn-shoe-card__color" style="background-color: #518dd5;"></span>
+                              </button>
+                              <button class="pn-shoes-card__btn-color js-color-btn flex-center">
+                                <span class="pn-shoe-card__color" style="background-color: #e98d4b;"></span>
+                              </button>
+                            </div>
+                            <button class="pn-shoe-card__btn-item-cart flex-shrink-0">+</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="pn-shoe-card js-shoe-card">
+                          <button class="pn-shoe-card__btn-favorite js-btn-favorite d-flex">
+                            <svg class="pn-shoe-card__icon pn-shoe-card__icon-favorite pn-svg">
+                              <use xlink:href="/images/sprite/icons-sprite.svg#icon-hearth"></use>
+                            </svg>
+                          </button>
+                          <div class="pn-shoe-card__info d-flex flex-column align-items-start">
+                            <div class="pn-shoe-card__img-wrp d-flex align-items-center justify-content-center">
+                              <picture class="pn-shoe-card__img d-block">
+                                <source
+                                  srcset="/images/index-page/shoes-slider/shoes-item-3.webp 1x, /images/index-page/shoes-slider/shoes-item-3_2x.webp 2x"
+                                  type="image/webp">
+                                <img
+                                  srcset="/images/index-page/shoes-slider/shoes-item-3.png 1x, /images/index-page/shoes-slider/shoes-item-3_2x.png 2x"
+                                  src="/images/index-page/shoes-slider/shoes-item-3.png" alt="">
+                              </picture>
+                            </div>
+                            <span class="pn-shoe-card__title">New Balance 840 90s</span>
+                            <p class="pn-shoe-card__desc flex-grow-1">
+                              840 90s Running объединили в себе спортивную эстетику и необходимый в городском ритме комфорт.
+                            </p>
+                            <div>
+                              <span class="pn-shoe-card__price">10 990 ₽</span>
+                              <span class="pn-shoe-card__old-price">12 990 ₽</span>
+                            </div>
+                          </div>
+                          <div class="pn-shoe-card__actions d-flex align-items-center justify-content-between">
+                            <div class="pn-shoe-card__colors-wrp d-flex align-items-center js-item-colors">
+                              <span>Цвет:</span>
+                              <button class="pn-shoes-card__btn-color pn-shoes-card__btn-color--selected js-color-btn flex-center">
+                                <span class="pn-shoe-card__color" style="background-color: #d45d5e;"></span>
+                              </button>
+                              <button class="pn-shoes-card__btn-color js-color-btn flex-center">
+                                <span class="pn-shoe-card__color" style="background-color: #518dd5;"></span>
+                              </button>
+                              <button class="pn-shoes-card__btn-color js-color-btn flex-center">
+                                <span class="pn-shoe-card__color" style="background-color: #e98d4b;"></span>
+                              </button>
+                            </div>
+                            <button class="pn-shoe-card__btn-item-cart flex-shrink-0">+</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="pn-shoe-card js-shoe-card">
+                          <button class="pn-shoe-card__btn-favorite js-btn-favorite d-flex">
+                            <svg class="pn-shoe-card__icon pn-shoe-card__icon-favorite pn-svg">
+                              <use xlink:href="/images/sprite/icons-sprite.svg#icon-hearth"></use>
+                            </svg>
+                          </button>
+                          <div class="pn-shoe-card__info d-flex flex-column align-items-start">
+                            <div class="pn-shoe-card__img-wrp d-flex align-items-center justify-content-center">
+                              <picture class="pn-shoe-card__img d-block">
+                                <source
+                                  srcset="/images/index-page/shoes-slider/shoes-item-4.webp 1x, /images/index-page/shoes-slider/shoes-item-4_2x.webp 2x"
+                                  type="image/webp">
+                                <img
+                                  srcset="/images/index-page/shoes-slider/shoes-item-4.png 1x, /images/index-page/shoes-slider/shoes-item-4_2x.png 2x"
+                                  src="/images/index-page/shoes-slider/shoes-item-4.png" alt="">
+                              </picture>
+                            </div>
+                            <span class="pn-shoe-card__title">New Balance 840 90s</span>
+                            <p class="pn-shoe-card__desc flex-grow-1">
+                              840 90s Running объединили в себе спортивную эстетику и необходимый в городском ритме комфорт.
+                            </p>
+                            <div>
+                              <span class="pn-shoe-card__price">10 990 ₽</span>
+                              <span class="pn-shoe-card__old-price">12 990 ₽</span>
+                            </div>
+                          </div>
+                          <div class="pn-shoe-card__actions d-flex align-items-center justify-content-between">
+                            <div class="pn-shoe-card__colors-wrp d-flex align-items-center js-item-colors">
+                              <span>Цвет:</span>
+                              <button class="pn-shoes-card__btn-color pn-shoes-card__btn-color--selected js-color-btn flex-center">
+                                <span class="pn-shoe-card__color" style="background-color: #d45d5e;"></span>
+                              </button>
+                              <button class="pn-shoes-card__btn-color js-color-btn flex-center">
+                                <span class="pn-shoe-card__color" style="background-color: #518dd5;"></span>
+                              </button>
+                              <button class="pn-shoes-card__btn-color js-color-btn flex-center">
+                                <span class="pn-shoe-card__color" style="background-color: #e98d4b;"></span>
+                              </button>
+                            </div>
+                            <button class="pn-shoe-card__btn-item-cart flex-shrink-0">+</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="pn-shoe-card js-shoe-card">
+                          <button class="pn-shoe-card__btn-favorite js-btn-favorite d-flex">
+                            <svg class="pn-shoe-card__icon pn-shoe-card__icon-favorite pn-svg">
+                              <use xlink:href="/images/sprite/icons-sprite.svg#icon-hearth"></use>
+                            </svg>
+                          </button>
+                          <div class="pn-shoe-card__info d-flex flex-column align-items-start">
+                            <div class="pn-shoe-card__img-wrp d-flex align-items-center justify-content-center">
+                              <picture class="pn-shoe-card__img d-block">
+                                <source
+                                  type="image/webp"
+                                  srcset="/images/index-page/shoes-slider/shoes-item-1.webp 1x, /images/index-page/shoes-slider/shoes-item-1_2x.webp 2x">
+                                <img
+                                  srcset="/images/index-page/shoes-slider/shoes-item-1.png 1x, /images/index-page/shoes-slider/shoes-item-1.png 2x"
+                                  src="/images/index-page/shoes-slider/shoes-item-1.png" alt="">
+                              </picture>
+                            </div>
+                            <span class="pn-shoe-card__title">New Balance 840 90s</span>
+                            <p class="pn-shoe-card__desc flex-grow-1">
+                              840 90s Running объединили в себе спортивную эстетику и необходимый в городском ритме комфорт.
+                            </p>
+                            <div>
+                              <span class="pn-shoe-card__price">10 990 ₽</span>
+                              <span class="pn-shoe-card__old-price">12 990 ₽</span>
+                            </div>
+                          </div>
+                          <div class="pn-shoe-card__actions d-flex align-items-center justify-content-between">
+                            <div class="pn-shoe-card__colors-wrp d-flex align-items-center js-item-colors">
+                              <span>Цвет:</span>
+                              <button class="pn-shoes-card__btn-color pn-shoes-card__btn-color--selected js-color-btn flex-center">
+                                <span class="pn-shoe-card__color" style="background-color: #d45d5e;"></span>
+                              </button>
+                              <button class="pn-shoes-card__btn-color js-color-btn flex-center">
+                                <span class="pn-shoe-card__color" style="background-color: #518dd5;"></span>
+                              </button>
+                              <button class="pn-shoes-card__btn-color js-color-btn flex-center">
+                                <span class="pn-shoe-card__color" style="background-color: #e98d4b;"></span>
+                              </button>
+                            </div>
+                            <button class="pn-shoe-card__btn-item-cart flex-shrink-0">+</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="pn-shoe-card js-shoe-card">
+                          <button class="pn-shoe-card__btn-favorite js-btn-favorite d-flex">
+                            <svg class="pn-shoe-card__icon pn-shoe-card__icon-favorite pn-svg">
+                              <use xlink:href="/images/sprite/icons-sprite.svg#icon-hearth"></use>
+                            </svg>
+                          </button>
+                          <div class="pn-shoe-card__info d-flex flex-column align-items-start">
+                            <div class="pn-shoe-card__img-wrp d-flex align-items-center justify-content-center">
+                              <picture class="pn-shoe-card__img d-block">
+                                <source
+                                  srcset="/images/index-page/shoes-slider/shoes-item-2_2x.webp 2x, /images/index-page/shoes-slider/shoes-item-2.webp 1x"
+                                  type="image/webp">
+                                <img
+                                  srcset="/images/index-page/shoes-slider/shoes-item-2_2x.png 2x, /images/index-page/shoes-slider/shoes-item-2.png 1x"
+                                  src="/images/index-page/shoes-slider/shoes-item-2.png" alt="">
+                              </picture>
+                            </div>
+                            <span class="pn-shoe-card__title">New Balance 840 90s</span>
+                            <p class="pn-shoe-card__desc flex-grow-1">
+                              840 90s Running объединили в себе спортивную эстетику и необходимый в городском ритме комфорт.
+                            </p>
+                            <div>
+                              <span class="pn-shoe-card__price">10 990 ₽</span>
+                              <span class="pn-shoe-card__old-price">12 990 ₽</span>
+                            </div>
+                          </div>
+                          <div class="pn-shoe-card__actions d-flex align-items-center justify-content-between">
+                            <div class="pn-shoe-card__colors-wrp d-flex align-items-center js-item-colors">
+                              <span>Цвет:</span>
+                              <button class="pn-shoes-card__btn-color pn-shoes-card__btn-color--selected js-color-btn flex-center">
+                                <span class="pn-shoe-card__color" style="background-color: #d45d5e;"></span>
+                              </button>
+                              <button class="pn-shoes-card__btn-color js-color-btn flex-center">
+                                <span class="pn-shoe-card__color" style="background-color: #518dd5;"></span>
+                              </button>
+                              <button class="pn-shoes-card__btn-color js-color-btn flex-center">
+                                <span class="pn-shoe-card__color" style="background-color: #e98d4b;"></span>
+                              </button>
+                            </div>
+                            <button class="pn-shoe-card__btn-item-cart flex-shrink-0">+</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="pn-shoe-card js-shoe-card">
+                          <button class="pn-shoe-card__btn-favorite js-btn-favorite d-flex">
+                            <svg class="pn-shoe-card__icon pn-shoe-card__icon-favorite pn-svg">
+                              <use xlink:href="/images/sprite/icons-sprite.svg#icon-hearth"></use>
+                            </svg>
+                          </button>
+                          <div class="pn-shoe-card__info d-flex flex-column align-items-start">
+                            <div class="pn-shoe-card__img-wrp d-flex align-items-center justify-content-center">
+                              <picture class="pn-shoe-card__img d-block">
+                                <source
+                                  srcset="/images/index-page/shoes-slider/shoes-item-3.webp 1x, /images/index-page/shoes-slider/shoes-item-3_2x.webp 2x"
+                                  type="image/webp">
+                                <img
+                                  srcset="/images/index-page/shoes-slider/shoes-item-3.png 1x, /images/index-page/shoes-slider/shoes-item-3_2x.png 2x"
+                                  src="/images/index-page/shoes-slider/shoes-item-3.png" alt="">
+                              </picture>
+                            </div>
+                            <span class="pn-shoe-card__title">New Balance 840 90s</span>
+                            <p class="pn-shoe-card__desc flex-grow-1">
+                              840 90s Running объединили в себе спортивную эстетику и необходимый в городском ритме комфорт.
+                            </p>
+                            <div>
+                              <span class="pn-shoe-card__price">10 990 ₽</span>
+                              <span class="pn-shoe-card__old-price">12 990 ₽</span>
+                            </div>
+                          </div>
+                          <div class="pn-shoe-card__actions d-flex align-items-center justify-content-between">
+                            <div class="pn-shoe-card__colors-wrp d-flex align-items-center js-item-colors">
+                              <span>Цвет:</span>
+                              <button class="pn-shoes-card__btn-color pn-shoes-card__btn-color--selected js-color-btn flex-center">
+                                <span class="pn-shoe-card__color" style="background-color: #d45d5e;"></span>
+                              </button>
+                              <button class="pn-shoes-card__btn-color js-color-btn flex-center">
+                                <span class="pn-shoe-card__color" style="background-color: #518dd5;"></span>
+                              </button>
+                              <button class="pn-shoes-card__btn-color js-color-btn flex-center">
+                                <span class="pn-shoe-card__color" style="background-color: #e98d4b;"></span>
+                              </button>
+                            </div>
+                            <button class="pn-shoe-card__btn-item-cart flex-shrink-0">+</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="pn-shoe-card js-shoe-card">
+                          <button class="pn-shoe-card__btn-favorite js-btn-favorite d-flex">
+                            <svg class="pn-shoe-card__icon pn-shoe-card__icon-favorite pn-svg">
+                              <use xlink:href="/images/sprite/icons-sprite.svg#icon-hearth"></use>
+                            </svg>
+                          </button>
+                          <div class="pn-shoe-card__info d-flex flex-column align-items-start">
+                            <div class="pn-shoe-card__img-wrp d-flex align-items-center justify-content-center">
+                              <picture class="pn-shoe-card__img d-block">
+                                <source
+                                  srcset="/images/index-page/shoes-slider/shoes-item-4.webp 1x, /images/index-page/shoes-slider/shoes-item-4_2x.webp 2x"
+                                  type="image/webp">
+                                <img
+                                  srcset="/images/index-page/shoes-slider/shoes-item-4.png 1x, /images/index-page/shoes-slider/shoes-item-4_2x.png 2x"
+                                  src="/images/index-page/shoes-slider/shoes-item-4.png" alt="">
+                              </picture>
+                            </div>
+                            <span class="pn-shoe-card__title">New Balance 840 90s</span>
+                            <p class="pn-shoe-card__desc flex-grow-1">
+                              840 90s Running объединили в себе спортивную эстетику и необходимый в городском ритме комфорт.
+                            </p>
+                            <div>
+                              <span class="pn-shoe-card__price">10 990 ₽</span>
+                              <span class="pn-shoe-card__old-price">12 990 ₽</span>
+                            </div>
+                          </div>
+                          <div class="pn-shoe-card__actions d-flex align-items-center justify-content-between">
+                            <div class="pn-shoe-card__colors-wrp d-flex align-items-center js-item-colors">
+                              <span>Цвет:</span>
+                              <button class="pn-shoes-card__btn-color pn-shoes-card__btn-color--selected js-color-btn flex-center">
+                                <span class="pn-shoe-card__color" style="background-color: #d45d5e;"></span>
+                              </button>
+                              <button class="pn-shoes-card__btn-color js-color-btn flex-center">
+                                <span class="pn-shoe-card__color" style="background-color: #518dd5;"></span>
+                              </button>
+                              <button class="pn-shoes-card__btn-color js-color-btn flex-center">
+                                <span class="pn-shoe-card__color" style="background-color: #e98d4b;"></span>
+                              </button>
+                            </div>
+                            <button class="pn-shoe-card__btn-item-cart flex-shrink-0">+</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="pn-shoe-card js-shoe-card">
+                          <button class="pn-shoe-card__btn-favorite js-btn-favorite d-flex">
+                            <svg class="pn-shoe-card__icon pn-shoe-card__icon-favorite pn-svg">
+                              <use xlink:href="/images/sprite/icons-sprite.svg#icon-hearth"></use>
+                            </svg>
+                          </button>
+                          <div class="pn-shoe-card__info d-flex flex-column align-items-start">
+                            <div class="pn-shoe-card__img-wrp d-flex align-items-center justify-content-center">
+                              <picture class="pn-shoe-card__img d-block">
+                                <source
+                                  type="image/webp"
+                                  srcset="/images/index-page/shoes-slider/shoes-item-1.webp 1x, /images/index-page/shoes-slider/shoes-item-1_2x.webp 2x">
+                                <img
+                                  srcset="/images/index-page/shoes-slider/shoes-item-1.png 1x, /images/index-page/shoes-slider/shoes-item-1.png 2x"
+                                  src="/images/index-page/shoes-slider/shoes-item-1.png" alt="">
+                              </picture>
+                            </div>
+                            <span class="pn-shoe-card__title">New Balance 840 90s</span>
+                            <p class="pn-shoe-card__desc flex-grow-1">
+                              840 90s Running объединили в себе спортивную эстетику и необходимый в городском ритме комфорт.
+                            </p>
+                            <div>
+                              <span class="pn-shoe-card__price">10 990 ₽</span>
+                              <span class="pn-shoe-card__old-price">12 990 ₽</span>
+                            </div>
+                          </div>
+                          <div class="pn-shoe-card__actions d-flex align-items-center justify-content-between">
+                            <div class="pn-shoe-card__colors-wrp d-flex align-items-center js-item-colors">
+                              <span>Цвет:</span>
+                              <button class="pn-shoes-card__btn-color pn-shoes-card__btn-color--selected js-color-btn flex-center">
+                                <span class="pn-shoe-card__color" style="background-color: #d45d5e;"></span>
+                              </button>
+                              <button class="pn-shoes-card__btn-color js-color-btn flex-center">
+                                <span class="pn-shoe-card__color" style="background-color: #518dd5;"></span>
+                              </button>
+                              <button class="pn-shoes-card__btn-color js-color-btn flex-center">
+                                <span class="pn-shoe-card__color" style="background-color: #e98d4b;"></span>
+                              </button>
+                            </div>
+                            <button class="pn-shoe-card__btn-item-cart flex-shrink-0">+</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            </div>
+        </div>
+      </section>
+
+      <section class="pn-section pn-table-section">
+        <div class="pn-container">
+          <div class="pn-section__title-wrp pn-section__title-wrp--center">
+            <div class="pn-section__title-emoji pn-emoji pn-emoji--sunglasses"></div>
+            <h2 class="pn-section__title">Время таблиц</h2>
+            <p class="pn-section__description">Какой серьезный проект может обойтись без таблиц? Мы не сомневаемся, что ты умеешь их верстать, попробуй реализовать такую таблицу.</p>
+          </div>
+        </div>
+        <div class="pn-table-section__table-container pn-container">
+          <div class="pn-table-section__table-wrp pn-table-wrp">
+            <table class="pn-table-section__table pn-table js-table">
+              <thead class="pn-table__header js-table-header">
+                <tr>
+                  <th></th>
+                  <th class="pn-table-section__header-cell pn-table-section__cell-standard">
+                    <svg class="pn-table-section__tariff-icon">
+                      <use xlink:href="/images/index-page/table-section/rocket-standard.svg#rocket"></use>
+                    </svg>
+                    <span class="pn-table-section__tariff-name">Стандартный</span>
+                    <p class="pn-table-section__tariff-desc">
+                      Это самый стандартный тариф, который подойдет для новых пользователей
+                    </p>
+                  </th>
+                  <th class="pn-table-section__header-cell pn-table-section__cell-optimal">
+                    <svg class="pn-table-section__tariff-icon">
+                      <use xlink:href="/images/index-page/table-section/rocket-optimal.svg#rocket"></use>
+                    </svg>
+                    <span class="pn-table-section__tariff-name">Оптимальный</span>
+                    <p class="pn-table-section__tariff-desc">
+                      Это самый стандартный тариф, который подойдет для новых пользователей
+                    </p>
+                  </th>
+                  <th class="pn-table-section__header-cell pn-table-section__cell-premium">
+                    <svg class="pn-table-section__tariff-icon">
+                      <use xlink:href="/images/index-page/table-section/rocket-premium.svg#rocket"></use>
+                    </svg>
+                    <span class="pn-table-section__tariff-name">Премиум</span>
+                    <p class="pn-table-section__tariff-desc">
+                      Это самый стандартный тариф, который подойдет для новых пользователей
+                    </p>
+                  </th>
+                </tr>
+              </thead>
+              <tbody class="pn-table__body">
+                <tr>
+                  <th class="pn-table-section__cell-title">
+                    <span>Место на диске</span>
+                  </th>
+                  <td class="pn-table-section__cell-standard">1 GB</td>
+                  <td class="pn-table-section__cell-optimal">5 GB</td>
+                  <td class="pn-table-section__cell-premium">100 GB</td>
+                </tr>
+                <tr>
+                  <th class="pn-table-section__cell-title">Количество проектов</th>
+                  <td class="pn-table-section__cell-standard">1</td>
+                  <td class="pn-table-section__cell-optimal">10</td>
+                  <td class="pn-table-section__cell-premium">
+                    <span class="ot-table__infinity-symbol">&infin;</span>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="pn-table-section__cell-title">Пользователей в проекте</th>
+                  <td class="pn-table-section__cell-standard">2</td>
+                  <td class="pn-table-section__cell-optimal">5</td>
+                  <td class="pn-table-section__cell-premium">
+                    <span class="ot-table__infinity-symbol">&infin;</span>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="pn-table-section__cell-title">Интерактивное редактирование</th>
+                  <td class="pn-table-section__cell-standard"><span class="ot-table__empty-value">—</span></td>
+                  <td class="pn-table-section__cell-optimal">
+                    <svg class="ot-table__icon-check">
+                      <use xlink:href="/images/sprite/icons-sprite.svg#icon-check"></use>
+                    </svg>
+                  </td>
+                  <td class="pn-table-section__cell-premium">
+                    <svg class="ot-table__icon-check">
+                      <use xlink:href="/images/sprite/icons-sprite.svg#icon-check"></use>
+                    </svg>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="pn-table-section__cell-title">Техническая поддержка (в сутки)</th>
+                  <td class="pn-table-section__cell-standard">1 час</td>
+                  <td class="pn-table-section__cell-optimal">3 часа</td>
+                  <td class="pn-table-section__cell-premium">12 часов</td>
+                </tr>
+                <tr>
+                  <th class="pn-table-section__cell-title">Премиум ресурсы</th>
+                  <td class="pn-table-section__cell-standard">
+                    <span class="ot-table__empty-value">—</span>
+                  </td>
+                  <td class="pn-table-section__cell-optimal">
+                    <span class="ot-table__empty-value">—</span>
+                  </td>
+                  <td class="pn-table-section__cell-premium">
+                    <svg class="ot-table__icon-check">
+                      <use xlink:href="/images/sprite/icons-sprite.svg#icon-check"></use>
+                    </svg>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="pn-table-section__cell-title">Отключение рекламы</th>
+                  <td class="pn-table-section__cell-standard">
+                    <span class="ot-table__empty-value">—</span>
+                  </td>
+                  <td class="pn-table-section__cell-optimal">
+                    <svg class="ot-table__icon-check">
+                      <use xlink:href="/images/sprite/icons-sprite.svg#icon-check"></use>
+                    </svg>
+                  </td>
+                  <td class="pn-table-section__cell-premium">
+                    <svg class="ot-table__icon-check">
+                      <use xlink:href="/images/sprite/icons-sprite.svg#icon-check"></use>
+                    </svg>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="pn-table-section__cell-title">Приложения для iOS и Android</th>
+                  <td class="pn-table-section__cell-standard">
+                    <span class="ot-table__empty-value">—</span>
+                  </td>
+                  <td class="pn-table-section__cell-optimal">
+                    <span class="ot-table__empty-value">—</span>
+                  </td>
+                  <td class="pn-table-section__cell-premium">
+                    <svg class="ot-table__icon-check">
+                      <use xlink:href="/images/sprite/icons-sprite.svg#icon-check"></use>
+                    </svg>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="d-none">
+          <svg id="check" viewBox="0 0 16 12" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15.7657 0.359328C15.4533 0.0468906 14.9468 0.0468906 14.6343 0.359328L5.04981 9.94392L1.36569 6.2598C1.05328 5.94736 0.546781 5.94739 0.234313 6.2598C-0.0781246 6.5722 -0.0781246 7.0787 0.234313 7.39114L4.48412 11.6409C4.79643 11.9533 5.30331 11.9531 5.6155 11.6409L15.7657 1.4907C16.0781 1.1783 16.0781 0.671766 15.7657 0.359328Z" fill="currentColor"/>
+          </svg>
+        </div>
+      </section>
+
+      <section class="pn-section pn-email-section">
+        <div class="pn-container flex-column align-items-center">
+          <div class="pn-section__title-wrp pn-section__title-wrp--center">
+            <div class="pn-section__title-emoji pn-emoji pn-emoji--envelope"></div>
+            <h2 class="pn-section__title">Всё готово? <span class="nowrap">Высылай нам!</span></h2>
+            <p class="pn-section__description">Когда всё будет готово, высылай архив с версткой или ссылку на облачный файл на нашу почту, указав тему письма “Тестовое задание для верстальщиков”.</p>
+          </div>
+          <a class="pn-email-section__link" href="mailto:hr@freematiq.com">hr@freematiq.com</a>
+        </div>
+      </section>
+
+    </main>
+    <footer class="pn-footer">
+      <div class="pn-container flex-sm-column justify-content-between">
+        <span class="pn-footer__text-copyright">
+          © 2021, Project N1 - Special for you,
+          <span class="pn-footer__text-rules">Все права защищены</span>
+        </span>
+        <span>Сделано во <a href="#">Freematiq</a></span>
+      </div>
+    </footer>
+  </div>
+
+  <div id="modal" class="pn-modal">
+    <div class="pn-modal__overlay"></div>
+    <div class="pn-modal__dialog">
+      <div class="pn-modal__content d-flex flex-column">
+        <div class="pn-modal__header d-flex align-items-center justify-content-between">
+          <span class="pn-modal__title">Модальное окно</span>
+          <button class="pn-modal__btn-close d-flex align-items-center justify-content-center" data-close="modal">&times;</button>
+        </div>
+        <div class="pn-modal__body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, quisquam.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aspernatur dolorem exercitationem facilis laborum maiores nesciunt nobis, quasi quisquam quos recusandae suscipit, vel voluptatem? Maxime odio possimus quasi quisquam voluptatum!</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum cupiditate delectus dicta dignissimos dolore dolores, iure laborum, maxime nobis numquam quam, quidem quisquam repellendus! Dignissimos neque nisi porro quibusdam vitae.</p>
+        </div>
+        <div class="pn-modal__footer d-flex align-items-center justify-content-end" data-ripple-effect>
+          <button class="pn-modal__btn-cancel pn-btn" data-close="modal">
+            Закрыть
+          </button>
+          <button class="pn-btn">
+            Действие
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/main.bundle.js"></script>
+</body>
+</html>

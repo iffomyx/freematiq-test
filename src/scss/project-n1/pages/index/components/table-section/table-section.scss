@@ -1,0 +1,116 @@
+/* region table section variables */
+
+$table-section-title-column-width: 33%;
+$table-section-tariff-column-width: calc((100% - #{$table-section-title-column-width}) / 3);
+
+$table-section-standard-bg-color: #f2f8ff;
+$table-section-optimal-bg-color: #f7f4ff;
+$table-section-premium-bg-color: #fff1f8;
+
+/* endregion table section variables */
+
+/* Table section styles */
+
+.pn-table-section {
+  & .pn-table__body {
+    & td {
+      text-align: center;
+    }
+  }
+}
+
+.pn-table-section--fixed-header {
+  & .pn-table__header {
+    position: fixed;
+    top: 49px;
+    z-index: 2;
+    width: 100%;
+    //box-shadow: 0 6px 20px 0 rgba($black-color, 0.15);
+  }
+
+  & .pn-table__body {
+    margin-top: 59px;
+  }
+
+  & .pn-table-section__header-cell {
+    //padding: 2px;
+  }
+
+  & .pn-table-section__tariff-icon {
+    //height: 30px !important;
+  }
+}
+
+.pn-table-section__table {
+  min-width: 686px;
+}
+
+.pn-table-section__header-cell {
+  width: $table-section-tariff-column-width;
+  padding: 20px;
+}
+
+.pn-table-section__cell-title {
+  width: $table-section-title-column-width;
+  //min-width: 165px;
+  padding: 0 18px;
+  text-align: left;
+}
+
+.pn-table-section__cell-standard {
+  background-color: $table-section-standard-bg-color;
+
+  & .pn-table-section__tariff-icon {
+    width: 27px;
+    height: 53px;
+  }
+
+  & .ot-table__icon-check {
+    color: #489aff;
+  }
+}
+
+.pn-table-section__cell-optimal {
+  background-color: $table-section-optimal-bg-color;
+
+  & .pn-table-section__tariff-icon {
+    width: 36px;
+    height: 53px;
+  }
+
+  & .ot-table__icon-check {
+    color: #9570ee;
+  }
+}
+
+.pn-table-section__cell-premium {
+  background-color: $table-section-premium-bg-color;
+
+  & .pn-table-section__tariff-icon {
+    width: 34px;
+    height: 53px;
+  }
+
+  & .ot-table__icon-check {
+    color: #ff56a9;
+  }
+}
+
+.pn-table-section__tariff-icon {
+  margin-bottom: 10px;
+}
+
+.pn-table-section__tariff-name {
+  display: block;
+  margin: 0 0 7px;
+  font-size: 20px;
+}
+
+.pn-table-section__tariff-desc {
+  max-width: 202px;
+  margin: 0 auto;
+  color: $text-color;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 1.2;
+}

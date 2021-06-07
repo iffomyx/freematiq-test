@@ -1,0 +1,24 @@
+/* region List component variables */
+
+$list-marker-color: $primary-color;
+
+/* endregion List component variables */
+
+/* List component styles */
+
+.pn-list {
+  margin: 0;
+  padding-left: 16px;
+}
+
+.pn-list__item {
+  margin: 0 0 2px;
+
+  &:last-child {
+    margin: 0;
+  }
+
+  &::marker {
+    color: $list-marker-color;
+  }
+}

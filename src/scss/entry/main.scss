@@ -1,0 +1,27 @@
+@import "../vendor/normalize/normalize.css";
+@import "../vendor/swiper/swiper";
+
+@import "../project-n1/core/variables/variables";
+
+@import "../project-n1/core/mixins/breakpoint";
+@import "../project-n1/core/mixins/images";
+
+@import "../project-n1/core/general";
+@import "../project-n1/core/classes";
+
+@import "../project-n1/components/button/button";
+@import "../project-n1/components/emoji";
+@import "../project-n1/components/list";
+@import "../project-n1/components/modal/modal";
+@import "../project-n1/components/table";
+@import "../project-n1/components/shoe-card";
+
+@import "../project-n1/components/button/button_responsive";
+
+@import "../project-n1/core/layout/layout";
+@import "../project-n1/core/layout/layout_responsive";
+
+@import "../project-n1/pages/index/index";
+@import "../project-n1/pages/error-404/error-404";
+
+@import "../project-n1/pages/index/index_responsive";

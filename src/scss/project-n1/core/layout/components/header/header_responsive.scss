@@ -1,0 +1,137 @@
+/*
+  Breakpoints:
+    xs:  375px,
+    sm:  576px,
+    md:  768px,
+    lg:  1024px,
+    xl:  1200px
+*/
+
+/* Header component responsive styles */
+
+@include media-breakpoint-down(xl) {
+  .pn-header__icon-logo {
+    width: 200px;
+  }
+
+  .pn-header__menu-item {
+    margin-right: 25px;
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .pn-header--pinned {
+    & .pn-header__nav {
+      top: 49px;
+      z-index: 2;
+      border-top: none;
+      border-radius: 0 0 15px 15px;
+
+      &::before {
+        right: 17px;
+      }
+    }
+  }
+
+  .pn-header--menu-open {
+    & .pn-header__nav {
+      display: flex;
+    }
+
+    & .pn-header__btn-menu {
+      background-color: $primary-color;
+    }
+
+    & .pn-header__btn-menu-line {
+      background-color: $white-color;
+    }
+  }
+
+  .pn-header__nav {
+    position: absolute;
+    top: 65px;
+    right: 0;
+    display: none;
+    background-color: $white-color;
+    border: 1px solid #e3e8ef;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px 0 rgba($black-color, 0.10);
+
+    &::before {
+      position: absolute;
+      top: -8px;
+      right: 21px;
+      width: 14px;
+      height: 14px;
+      background-color: #fff;
+      border-top: 1px solid #e3e8ef;
+      border-left: 1px solid #e3e8ef;
+      border-radius: 3px;
+      transform: rotate(45deg);
+      content: "";
+    }
+  }
+
+  .pn-header__menu-list {
+    flex-direction: column;
+  }
+
+  .pn-header__menu-item {
+    margin-right: 0;
+    border-bottom: 1px solid #e3e8ef;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  .pn-header__menu-link {
+    display: block;
+    width: 100%;
+    min-width: 230px;
+    padding: 15px;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .pn-header__icon-logo {
+    width: 146px;
+  }
+
+  .pn-header__btn-menu {
+    width: 60px;
+    height: 36px;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .pn-header--pinned {
+    & .pn-header__btn-modal {
+      width: 85px;
+    }
+  }
+
+  .pn-header__nav {
+    &::before {
+      right: 11px;
+    }
+  }
+
+  .pn-header__btn-menu {
+    width: 36px;
+  }
+
+  .pn-header__btn-modal {
+    padding: 10px 22px;
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  .pn-header__icon-logo {
+    width: 130px;
+  }
+
+  .pn-header__btn-modal {
+    padding: 10px 12px;
+  }
+}

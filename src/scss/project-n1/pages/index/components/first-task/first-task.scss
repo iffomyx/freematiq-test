@@ -1,0 +1,56 @@
+/* region first task section variables */
+
+$first-task-border-color: #e3e8ef;
+$first-task-item-font-color: $dark-text-color;
+
+/* endregion first task section variables */
+
+/* First task section styles */
+
+.pn-first-task {
+  margin-bottom: 0;
+}
+
+.pn-first-task__content {
+  width: 100%;
+  max-width: 870px;
+  padding: 25px 0;
+  border-top: 1px solid $first-task-border-color;
+  border-bottom: 1px solid $first-task-border-color;
+}
+
+.pn-first-task__description {
+  max-width: 617px;
+  margin: 0 0 25px;
+  font-size: 15px;
+}
+
+.pn-first-task__icon-wrp {
+  width: 52px;
+  height: 40px;
+  margin: 0 0 10px;
+}
+
+.pn-first-task__item {
+  width: 155px;
+}
+
+.pn-first-task__item--height {
+  & .pn-first-task__icon {
+    width: 47px;
+    height: 33px;
+  }
+}
+
+.pn-first-task__item--devices {
+  & .pn-first-task__icon {
+    width: 52px;
+    height: 40px;
+  }
+}
+
+.pn-first-task__item-text {
+  max-width: 125px;
+  color: $first-task-item-font-color;
+  font-size: 0.825rem;
+}

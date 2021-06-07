@@ -1,0 +1,61 @@
+/*
+  Breakpoints:
+    xs:  375px,
+    sm:  576px,
+    md:  768px,
+    lg:  1024px,
+    xl:  1200px
+*/
+
+/* Knowledge rating section responsive styles */
+
+@include media-breakpoint-down(md) {
+  .pn-shoes-slider {
+    & .swiper-container {
+      padding: 30px 0;
+      overflow: visible;
+    }
+  }
+
+  .pn-shoes-slider__container {
+    background-size: cover;
+  }
+
+  .pn-shoes-slider__left-column {
+    position: relative;
+    width: 100%;
+    margin: 0 0 30px;
+    padding: 0;
+  }
+
+  .pn-shoes-slider__actions {
+    width: 100%;
+    padding-top: 0;
+  }
+
+  .pn-shoes-slider__btn-nav {
+    margin: 0 0 0 20px;
+
+    &:last-child {
+      margin-left: 0;
+    }
+  }
+
+  .pn-shoes-slider__counter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .pn-shoes-slider__btn-nav {
+    width: 50px;
+    height: 50px;
+  }
+
+  .pn-shoes-slider__current-index {
+    font-size: 3.5rem;
+  }
+}

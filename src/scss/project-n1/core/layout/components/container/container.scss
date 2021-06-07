@@ -1,0 +1,17 @@
+/* Container component styles */
+
+.pn-container {
+  display: flex;
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up(#{$breakpoint}) {
+    .pn-container {
+      max-width: map-get($container-max-widths, $breakpoint);
+    }
+  }
+}

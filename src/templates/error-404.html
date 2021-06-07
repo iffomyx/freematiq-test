@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link href="/favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+  <link href="/favicon/favicon-32x32.png" rel="icon" type="image/png" sizes="32x32">
+  <link href="/favicon/favicon-16x16.png" rel="icon" type="image/png" sizes="16x16">
+  <link href="/favicon/site.webmanifest" rel="manifest">
+  <link href="/favicon/safari-pinned-tab.svg" rel="mask-icon" color="#5bbad5">
+
+  <meta name="msapplication-TileColor" content="#2b5797">
+  <meta name="theme-color" content="#ffffff">
+
+  <link href="//fonts.gstatic.com" rel="preconnect">
+  <link href="//fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link href="./css/main.css" rel="stylesheet">
+
+  <title>Project N1 - Special for you</title>
+</head>
+<body>
+  <div class="pn-main-wrapper">
+    <header class="pn-header js-header">
+      <div class="pn-container">
+        <div class="pn-header__wrp d-flex align-items-center">
+          <div class="pn-header__logo d-flex">
+            <a href="/">
+              <svg class="pn-header__icon-logo flex-shrink-0">
+                <use class="pn-header__icon-full" xlink:href="/images/logo/logo-full.svg#logo"></use>
+                <use class="pn-header__icon-without-label" xlink:href="/images/logo/logo-without-label.svg#logo"></use>
+              </svg>
+            </a>
+          </div>
+          <nav class="pn-header__nav align-items-center justify-content-center flex-grow-1">
+            <ul class="pn-header__menu-list d-flex">
+              <li class="pn-header__menu-item">
+                <a class="pn-header__menu-link js-menu-link" href="#">Это меню</a>
+              </li>
+              <li class="pn-header__menu-item">
+                <a class="pn-header__menu-link js-menu-link" href="#">Должно</a>
+              </li>
+              <li class="pn-header__menu-item">
+                <a class="pn-header__menu-link js-menu-link" href="#">Быть</a>
+              </li>
+              <li class="pn-header__menu-item">
+                <a class="pn-header__menu-link js-menu-link" href="#">Закрепленным</a>
+              </li>
+              <li class="pn-header__menu-item">
+                <a class="pn-header__menu-link js-menu-link" href="#">При скролле</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="pn-header__actions d-flex align-items-center justify-content-end">
+            <button class="pn-header__btn-modal pn-btn js-modal-btn" data-ripple-effect data-modal-id="modal">
+              <span class="pn-btn__label">Модалка</span>
+              <span class="pn-btn__ripple-root"></span>
+            </button>
+            <button class="pn-header__btn-menu pn-btn d-none d-lg-flex js-menu-btn">
+              <span class="pn-header__btn-lines d-flex align-items-center justify-content-center">
+                <span class="pn-header__btn-menu-line pn-header__btn-menu-line--top"></span>
+                <span class="pn-header__btn-menu-line pn-header__btn-menu-line--middle"></span>
+                <span class="pn-header__btn-menu-line pn-header__btn-menu-line--bottom"></span>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="pn-main-wrapper__main">
+
+      <section class="pn-section pn-error-404">
+        <div class="pn-container flex-column align-items-center justify-content-center text-center">
+          <svg class="pn-error-404__icon">
+            <use xlink:href="/images/error-page/error-404.svg#error-404"></use>
+          </svg>
+          <h2 class="pn-error-404__title">Страница не найдена</h2>
+          <p class="pn-error-404__desc">К сожалению, такой страницы нет. Либо администратор сайта ее удалил, либо ее никогда не существовало. Попробуйте проверить адрес страницы или начните с Главной.</p>
+          <a class="pn-btn" href="/">На главную</a>
+        </div>
+      </section>
+
+    </main>
+    <footer class="pn-footer">
+      <div class="pn-container flex-sm-column justify-content-between">
+          <span class="pn-footer__text-copyright">
+            © 2021, Project N1 - Special for you,
+            <span class="pn-footer__text-rules">Все права защищены</span>
+          </span>
+        <span>Сделано во <a href="#">Freematiq</a></span>
+      </div>
+    </footer>
+  </div>
+
+  <div id="modal" class="pn-modal">
+    <div class="pn-modal__overlay"></div>
+    <div class="pn-modal__dialog">
+      <div class="pn-modal__content d-flex flex-column">
+        <div class="pn-modal__header d-flex align-items-center justify-content-between">
+          <span class="pn-modal__title">Модальное окно</span>
+          <button class="pn-modal__btn-close d-flex align-items-center justify-content-center" data-close="modal">&times;</button>
+        </div>
+        <div class="pn-modal__body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, quisquam.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aspernatur dolorem exercitationem facilis laborum maiores nesciunt nobis, quasi quisquam quos recusandae suscipit, vel voluptatem? Maxime odio possimus quasi quisquam voluptatum!</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum cupiditate delectus dicta dignissimos dolore dolores, iure laborum, maxime nobis numquam quam, quidem quisquam repellendus! Dignissimos neque nisi porro quibusdam vitae.</p>
+        </div>
+        <div class="pn-modal__footer d-flex align-items-center justify-content-end" data-ripple-effect>
+          <button class="pn-modal__btn-cancel pn-btn" data-close="modal">
+            Закрыть
+          </button>
+          <button class="pn-btn">
+            Действие
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/err.bundle.js"></script>
+</body>
+</html>

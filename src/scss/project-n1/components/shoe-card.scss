@@ -1,0 +1,168 @@
+/* region Shoe card component variables */
+
+$shoe-card-bg-color: $white-color;
+$shoe-card-shadow: 0 6px 20px 0 rgba($black-color, 0.1);
+
+$shoe-card-btn-favorite-color: #d8d8d8;
+$shoe-card-btn-favorite-active-color: #feacac;
+$shoe-card-btn-favorite-checked-color: #f26f70;
+
+$shoe-card-title-color: $dark-text-color;
+$shoe-card-title-border-color: $primary-color;
+
+$shoe-card-price-color: $dark-text-color;
+
+$shoe-card-btn-color-active-border-color: #cdcdcd;
+
+$shoe-card-btn-cart-color: $white-color;
+$shoe-card-btn-cart-bg-color: #51bcf8;
+
+/* endregion Shoe card component variables */
+
+/* Shoe card component styles */
+
+.pn-shoe-card {
+  position: relative;
+  overflow: hidden;
+  background-color: $shoe-card-bg-color;
+  border-radius: 10px;
+  box-shadow: $shoe-card-shadow;
+}
+
+.pn-shoe-card__info {
+  padding: 44px 20px 11px;
+}
+
+.pn-shoe-card__btn-favorite {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  padding: 8px;
+  color: $shoe-card-btn-favorite-color;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  transition: color 0.2s ease-in-out, transform 0.3s ease-in-out;
+
+  &:hover {
+    background-color: inherit;
+    transform: scale(1.2);
+  }
+
+  &:active {
+    color: $shoe-card-btn-favorite-active-color;
+  }
+}
+
+.pn-shoe-card__btn-favorite--checked {
+  color: $shoe-card-btn-favorite-checked-color;
+  transform: none;
+}
+
+.pn-shoe-card__icon-favorite {
+  width: 20px;
+  height: 20px;
+}
+
+.pn-shoe-card__img-wrp {
+  width: 100%;
+  height: 120px;
+  margin: 0 0 32px;
+}
+
+.pn-shoe-card__title {
+  position: relative;
+  margin: 0 0 13px;
+  color: $shoe-card-title-color;
+  font-weight: 400;
+  font-size: 1.25rem;
+
+  &::before {
+    position: absolute;
+    top: -2px;
+    left: -20px;
+    width: 3px;
+    height: 34px;
+    background-color: $shoe-card-title-border-color;
+    content: "";
+  }
+}
+
+.pn-shoe-card__desc {
+  max-width: 100%;
+  height: 71px;
+  margin: 0 0 18px;
+  overflow: hidden;
+  font-size: 13px;
+}
+
+.pn-shoe-card__price {
+  margin: 0 13px 0 0;
+  color: $shoe-card-price-color;
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+
+.pn-shoe-card__old-price {
+  text-decoration: line-through;
+}
+
+.pn-shoe-card__colors-wrp {
+  width: 100%;
+  padding: 0 20px;
+}
+
+.pn-shoes-card__btn-color {
+  width: 24px;
+  height: 24px;
+  margin: 0 2px 0 0;
+  padding: 0;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  transition: border-color 0.3s ease-in;
+
+  &:first-of-type {
+    margin-left: 12px;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    & .pn-shoe-card__color {
+      transform: scale(1.25);
+    }
+  }
+}
+
+.pn-shoes-card__btn-color--selected {
+  border-color: $shoe-card-btn-color-active-border-color;
+  pointer-events: none;
+
+  &:hover {
+    & .pn-shoe-card__color {
+      transform: none;
+    }
+  }
+}
+
+.pn-shoe-card__color {
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out;
+  pointer-events: none;
+}
+
+.pn-shoe-card__btn-item-cart {
+  width: 50px;
+  height: 50px;
+  color: $shoe-card-btn-cart-color;
+  font-weight: 300;
+  font-size: 2.25rem;
+  background-color: $shoe-card-btn-cart-bg-color;
+  border: none;
+  border-top-left-radius: 10px;
+}

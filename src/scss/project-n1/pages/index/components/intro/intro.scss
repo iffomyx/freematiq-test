@@ -1,0 +1,77 @@
+/* region Intro section variables */
+
+$intro-info-color: $dark-text-color;
+
+/* endregion Intro section variables */
+
+/* Intro section styles */
+
+.pn-intro {
+  margin-bottom: 0;
+
+  & .pn-container {
+    position: relative;
+    height: 100%;
+  }
+
+  & .pn-section__title-wrp {
+    margin: 0 0 20px;
+  }
+}
+
+.pn-intro__wrp {
+  position: relative;
+  max-width: 1440px;
+  height: 100%;
+  min-height: calc(100vh - 90px);
+  margin: 0 auto;
+  padding: 0 0 90px;
+
+  &::before {
+    position: absolute;
+    top: -90px;
+    right: 0;
+    width: 853px;
+    height: 667px;
+    background: no-repeat img-url("/index-page/intro/intro-bg-wave.svg") center / cover;
+    content: "";
+  }
+
+  &::after {
+    position: absolute;
+    top: -90px;
+    left: calc(100% - 1px);
+    width: calc((100vw - 1440px) / 2);
+    height: 667px;
+    background-color: #f3f5fe;
+    content: "";
+  }
+}
+
+.pn-intro__main {
+  max-width: 584px;
+  margin-right: 20px;
+  padding: 40px 0;
+}
+
+.pn-intro__description {
+  max-width: 420px;
+}
+
+.pn-intro__info {
+  color: $intro-info-color;
+}
+
+.pn-intro__list-title {
+  margin: 0 0 8px;
+  font-weight: 400;
+}
+
+.pn-intro__list {
+  margin: 0 0 20px;
+}
+
+.pn-intro__picture {
+  width: 100%;
+  padding-top: 100px;
+}

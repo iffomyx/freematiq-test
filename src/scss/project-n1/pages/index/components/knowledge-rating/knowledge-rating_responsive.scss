@@ -1,0 +1,66 @@
+/*
+  Breakpoints:
+    xs:  375px,
+    sm:  576px,
+    md:  768px,
+    lg:  1024px,
+    xl:  1200px
+*/
+
+/* Knowledge rating section responsive styles */
+
+@include media-breakpoint-down(lg) {
+  .pn-knowledge-rating__content {
+    padding: 25px;
+  }
+
+  .pn-knowledge-rating__stat-circle {
+    margin-right: 25px;
+  }
+
+  .pn-knowledge-rating__range-wrp {
+    margin-top: 10px;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .pn-knowledge-rating {
+    & .pn-section__title-wrp {
+      margin-right: 0;
+    }
+  }
+
+  .pn-knowledge-rating__content {
+    padding: 40px;
+  }
+
+  .pn-knowledge-rating__stats {
+    margin-bottom: 25px;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .pn-knowledge-rating__content {
+    padding: 25px;
+  }
+
+  .pn-knowledge-rating__stats {
+    width: 100%;
+  }
+
+  .pn-knowledge-rating__stat-circle {
+    width: 100px;
+    height: 100px;
+  }
+
+  .pn-knowledge-rating__range-point {
+    font-size: 13px;
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  .pn-knowledge-rating__stat-circle {
+    width: 90px;
+    height: 90px;
+  }
+}

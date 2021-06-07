@@ -1,0 +1,28 @@
+/* region Emoji component variables */
+
+$emoji-size: 40px;
+$emoji-sm-size: 32px;
+$emoji-list: envelope, hand-wave, raised-hands, rocket, star-struck, sunglasses;
+
+/* endregion Emoji component variables */
+
+/* Emoji component styles */
+
+.pn-emoji {
+  width: $emoji-size;
+  height: $emoji-size;
+  background: no-repeat center/cover;
+}
+
+@each $emoji in $emoji-list {
+  .pn-emoji--#{$emoji} {
+    background-image: img-url("/emoji/emoji-#{$emoji}.png");
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .pn-emoji {
+    width: $emoji-sm-size;
+    height: $emoji-sm-size;
+  }
+}

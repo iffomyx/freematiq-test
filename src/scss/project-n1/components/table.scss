@@ -1,0 +1,64 @@
+/* region Table component variables */
+
+$table-text-color: $dark-text-color;
+$table-border-color: #e3e8ef;
+$table-border-radius: 5px;
+$table-empty-value-color: #c3d0df;
+
+/* endregion Table component variables */
+
+/* Table component styles */
+
+.pn-table-wrp {
+  width: 100%;
+  overflow: auto;
+  border: 1px solid $table-border-color;
+  border-radius: 5px;
+}
+
+.pn-table {
+  width: 100%;
+  color: $table-text-color;
+  font-weight: 400;
+  font-size: 15px;
+  border-spacing: 0;
+
+  & th {
+    font-weight: 400;
+  }
+
+  & td,
+  & th {
+    height: 50px;
+    border-right: 1px solid $table-border-color;
+    border-bottom: 1px solid $table-border-color;
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+}
+
+.pn-table__body {
+  & tr {
+    &:last-child {
+      & td,
+      & th {
+        border-bottom: none;
+      }
+    }
+  }
+}
+
+.ot-table__icon-check {
+  width: 16px;
+  height: 12px;
+}
+
+.ot-table__infinity-symbol {
+  font-size: 24px;
+}
+
+.ot-table__empty-value {
+  color: $table-empty-value-color;
+}

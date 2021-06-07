@@ -1,0 +1,122 @@
+/*
+  Breakpoints:
+    xs:  375px,
+    sm:  576px,
+    md:  768px,
+    lg:  1024px,
+    xl:  1200px
+*/
+
+/* Table section responsive styles */
+
+@include media-breakpoint-down(lg) {
+  .pn-table-section__header-cell {
+    padding: 8px;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .pn-table-section__table {
+    display: flex;
+    flex-direction: column;
+    min-width: auto;
+    font-size: 14px;
+
+    & tr {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+
+    & td,
+    & th {
+      height: auto;
+    }
+
+    & .pn-table__header {
+      & th {
+        &:first-child {
+          display: none;
+        }
+      }
+    }
+
+    & .pn-table__body {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      & tr {
+        &:last-child {
+          & th {
+            border-bottom: 1px solid $table-border-color;
+          }
+        }
+      }
+
+      & th {
+        width: 100%;
+        padding: 6px 8px;
+        font-weight: 400;
+        border-right: none;
+      }
+
+      & td {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: calc(100% / 3);
+        min-height: 40px;
+      }
+    }
+  }
+
+  .pn-table-section__header-cell {
+    position: relative;
+    width: calc(100% / 3);
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .pn-table-section__table-container {
+    max-width: none;
+    padding: 0;
+  }
+
+  .pn-table-section__table-wrp {
+    width: 100%;
+    border-right: none;
+    border-left: none;
+    border-radius: 0;
+  }
+
+  .pn-table-section__header-cell {
+    padding: 8px 3px;
+  }
+
+  .pn-table-section__tariff-icon {
+    height: 41px !important;
+    margin-bottom: 5px;
+  }
+
+  .pn-table-section__tariff-name {
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  .pn-table-section__tariff-desc {
+    display: none;
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  .pn-table-section__tariff-icon {
+    height: 41px !important;
+    margin-bottom: 0;
+  }
+
+  .pn-table-section__tariff-name {
+    font-size: 14px;
+  }
+}

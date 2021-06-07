@@ -1,0 +1,58 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "gulp",
+    "sprite": "gulp sprite",
+    "images": "gulp images"
+  },
+  "browserslist": [
+    "last 10 versions",
+    "not dead",
+    "Chrome >= 45",
+    "Firefox >= 38",
+    "not Blackberry < 10",
+    "not IE <= 10",
+    "EDGE >= 12",
+    "not OperaMobile <= 12.5",
+    "Safari > 6",
+    "Opera > 12.5",
+    "IOS > 6",
+    "not Android < 4.4"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.13.14",
+    "@babel/preset-env": "^7.13.12",
+    "babel-loader": "^8.2.2",
+    "browser-sync": "^2.26.14",
+    "del": "^6.0.0",
+    "eslint": "^7.23.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-changed": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-file-include": "^2.3.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-svg-sprite": "^1.5.0",
+    "gulp-svgo": "^2.2.1",
+    "imagemin-pngquant": "^9.0.2",
+    "imagemin-webp": "^6.0.0",
+    "stylelint": "^13.12.0",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^21.0.0",
+    "stylelint-order": "^4.1.0",
+    "stylelint-scss": "^3.19.0",
+    "webpack-stream": "^6.1.2",
+    "yargs": "^15.4.1"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "@fancyapps/fancybox": "^3.5.7",
+    "svgxuse": "^1.2.6",
+    "swiper": "^6.6.2"
+  }
+}

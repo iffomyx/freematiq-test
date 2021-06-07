@@ -1,0 +1,33 @@
+/* Section component styles */
+
+.pn-section {
+  position: relative;
+  margin: 0 0 90px;
+}
+
+.pn-section__title-wrp {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 0 25px;
+}
+
+.pn-section__title-wrp--center {
+  align-items: center;
+  text-align: center;
+
+  & .pn-section__description {
+    max-width: 617px;
+    font-size: 15px;
+  }
+}
+
+.pn-section__title-emoji {
+  margin: 0 0 12px;
+}
+
+.pn-section__title {
+  margin: 0 0 10px;
+  font-size: 2.25rem;
+  line-height: 1.2;
+}

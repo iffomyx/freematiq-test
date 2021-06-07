@@ -1,0 +1,9 @@
+# phpstorm
+.idea/*
+!.idea/inspectionProfiles/Project_Default.xml
+!.idea/codeStyleSettings.xml
+!.idea/codeStyles/codeStyleConfig.xml
+!.idea/codeStyles/Project.xml
+
+node_modules
+package-lock.json

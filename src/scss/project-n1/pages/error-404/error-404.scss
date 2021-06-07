@@ -1,0 +1,26 @@
+.pn-error-404 {
+  height: 100%;
+  margin-bottom: 0;
+  padding: 45px 0;
+
+  & .pn-container {
+    height: 100%;
+  }
+}
+
+.pn-error-404__icon {
+  width: 132px;
+  height: 132px;
+  margin: 0 0 25px;
+}
+
+.pn-error-404__title {
+  margin: 0 0 10px;
+  font-size: 2.25rem;
+  line-height: 1;
+}
+
+.pn-error-404__desc {
+  max-width: 550px;
+  margin: 0 0 15px;
+}

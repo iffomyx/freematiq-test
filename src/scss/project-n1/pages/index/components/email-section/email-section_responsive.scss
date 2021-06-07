@@ -1,0 +1,16 @@
+/*
+  Breakpoints:
+    xs:  375px,
+    sm:  576px,
+    md:  768px,
+    lg:  1024px,
+    xl:  1200px
+*/
+
+/* Header component responsive styles */
+
+@include media-breakpoint-down(md) {
+  .pn-email-section {
+    margin: 45px 0 90px;
+  }
+}

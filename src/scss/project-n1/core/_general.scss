@@ -1,0 +1,76 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+@include media-breakpoint-down(md) {
+  html {
+    font-size: 14px;
+  }
+}
+
+body {
+  min-height: 100vh;
+  color: $text-color;
+  font: 300 1rem/1.4 Roboto, Helvetica Neue, Arial, sans-serif;
+  background-color: $white-color;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.pn-modal-open {
+  overflow: hidden;
+}
+
+.pn-menu-open {
+  overflow: hidden;
+}
+
+a {
+  color: $link-color;
+  font-weight: 400;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+button {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  color: $dark-text-color;
+  font-weight: 400;
+}
+
+p {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.pn-svg {
+  position: relative;
+  display: inline-block;
+  color: inherit;
+  vertical-align: middle;
+  background-color: transparent;
+  pointer-events: none;
+  fill: currentColor;
+  stroke: currentColor;
+  stroke-width: 0;
+}
