@@ -35,6 +35,7 @@ $intro-info-color: $dark-text-color;
     height: 667px;
     background: no-repeat img-url("/index-page/intro/intro-bg-wave.svg") center / cover;
     content: "";
+    pointer-events: none;
   }
 
   &::after {

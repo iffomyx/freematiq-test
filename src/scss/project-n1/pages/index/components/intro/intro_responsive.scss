@@ -21,7 +21,7 @@
 @include media-breakpoint-down(lg) {
   .pn-intro__wrp {
     &::before {
-      width: 630px;
+      width: 634px;
       height: 496px;
     }
   }
@@ -34,7 +34,7 @@
 @include media-breakpoint-down(md) {
   .pn-intro__wrp {
     &::before {
-      width: 480px;
+      width: 490px;
       height: 382px;
     }
   }
@@ -51,7 +51,7 @@
 @include media-breakpoint-down(sm) {
   .pn-intro__wrp {
     &::before {
-      width: 300px;
+      width: 328px;
       height: 254px;
     }
   }
